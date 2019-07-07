@@ -1,0 +1,8 @@
+main {
+  text-align: center;
+}
+
+#drag-drop-area {
+  display: inline-block;
+  margin-top: 6em;
+}
