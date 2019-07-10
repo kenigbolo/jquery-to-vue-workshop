@@ -4,7 +4,7 @@ const router = express.Router();
 // define the home page route
 router.get('/', function(req, res) {
   res.render('pages/index', {
-    scripts: ['index.js'],
+    scripts: ['index'],
     styles: ['home'],
     title: 'Home',
   });
