@@ -5,9 +5,8 @@ body {
 .background {
   margin: 0;
   background-color: #9ce7d6;
-  width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
 }
 .background:before {
   content: '';
