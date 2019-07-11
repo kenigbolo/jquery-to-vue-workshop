@@ -26,4 +26,17 @@ router.get('/upload', function(req, res) {
   });
 });
 
+router.post('/signup', function(req, res) {
+  const {username, password} = req.body;
+  req.session[username] = password;
+  res.status(200).json({success: 'Signup successful'});
+});
+
+router.post('/login', function(req, res) {
+  const {username, password} = req.body;
+  req.session[username] == password
+    ? res.status(200).json({success: 'Logged in', redirect: '/gallery'})
+    : res.status(200).json({error: 'Invalid username/password'});
+});
+
 module.exports = router;
